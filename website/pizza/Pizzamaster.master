@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Pizzamaster.master.cs" Inherits="pizza_Pizzamaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Pizza</title>
+      <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <script src="js/common.js"></script>
+    <script src="js/jquery-1.8.0.min.js"></script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="wrap">
+	<div class="wrapper">
+	   <div class="header">
+		   <div class="header_top">
+			   <div class="logo">
+				<a href="Default.aspx"><img src="images/logo.png" alt="" /></a>
+			   </div>
+		<div class="clear"></div>
+		  </div>
+	<div class="header_bottom">
+	   <div class="header_img">
+	      <img src="images/header_img.jpg" alt="" />
+	   </div>
+   <div class="menu">
+      <ul>
+    	<li><a href="Default.aspx"><img src="images/list_img.png" alt="" />HOME</a></li>
+    	<li><a href="orderplace.aspx"><img src="images/list_img.png" alt="" />PLACE ORDER</a></li>
+    	<li><a href="contactus.aspx"><img src="images/list_img.png" alt="" />CONTACT</a></li>
+     </ul>
+   </div>
+   </div>
+   </div>
+  <div class="main">
+     
+ <div class="content_top">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+      </div> 
+      
+       </div>
+  <div class="footer">
+       <div class="copy_right">
+	      <p>© 2016 rights Reseverd</p>
+	   </div>
+  </div>
+ </div>
+ </div>
+    </form>
+</body>
+</html>
